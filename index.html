@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" type="img/JPEG" href="port.jpeg">
+    <link rel="stylesheet" href="portfolio.css">
+    <style>
+        .header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 200px;
+    height: 100%;
+    padding:10px;
+    background-color: #008bf8;
+    box-sizing: border-box;
+    color: white;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.my-data{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.my-data p{
+    font-size: 20px;
+    color: rgb(176, 175, 175);
+    text-align: justify;
+}
+.header a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin-top: 20px;
+}
+.whole{
+    display: flex;
+    height: 1000px;
+}
+.body-0{
+    height: 100%;
+}
+.header h1{
+    font-weight: bolder;
+    margin-top: 30px;
+}
+.body{
+    display: flex;
+    flex-direction: row;
+}
+.body .last-name{
+    margin-left: 5px;
+}
+.first-name,
+.last-name{
+    font-size: 70px;
+    font-weight: bold;
+}
+.last-name{
+    color: #008bf8;
+}
+.address{
+    font-size: 20px;
+    color: rgb(176, 175, 175);
+}
+.email{
+    font-size: 20px;
+    color: rgb(176, 175, 175);
+}
+.body-1{
+    margin-left: 20px;
+}
+.ins,
+.link{
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    justify-items: center;
+    margin-left: 3px;
+    transition: 2s;
+    text-align: center;
+    border-radius: 15.5px;
+}
+.ins a{
+    transform: translate(-50%,-50%);
+}
+.link a{
+    transform: translate(-50%,-50%);
+}
+.ins:hover{
+   transform: scale(1.5);
+}
+.link:hover{
+    transform: scale(1.5);
+    
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    margin-left: 3px;
+}
+.education{
+    display: flex;
+    flex-wrap: wrap;
+}
+.education h1{
+    font-size: 70px;
+    margin-left: 15px;
+}
+.Uni-1,
+.uni-2{
+    color: #008bf8;
+}
+.my-data-uni p{
+    text-align: justify;
+    font-size: 20px;
+    color: rgb(176, 175, 175);
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 200px;
+    background-color: #2b2d42;
+    box-sizing: border-box;
+    margin-top: 80px;
+}
+.copy{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.copy{
+    position: relative;
+    left: 45%;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.copy h4{
+    margin-top: 2px;
+}
+.ski{
+    font-size: 70px;
+}
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.drop-down{
+    display: none;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #008bf8;
+    padding: 10px;
+}
+.Icon{
+    display: none;
+}
+@media (min-width:300px) and (max-width:450px){
+    .Uni-1,
+    .uni-2{
+    color: #008bf8;
+}
+    body{
+        background-color: #2b2d42;
+        color: white;
+    }
+    .Icon{
+        display: block;
+    }
+    .drop-down{
+        display: none;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: #008bf8;
+        padding: 10px;
+    }
+    #drop{
+        transition: 2s;
+    }
+    .drop-down a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    .header{
+    display: none;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    padding:10px;
+    background-color: #008bf8;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+}
+.whole{
+    display: flex;
+    flex-direction: column;
+}
+.my-data{
+    display: flex;
+    flex-wrap: wrap;
+}
+.my-data p{
+    font-size: 20px;
+    color: rgb(176, 175, 175);
+    text-align: justify;
+}
+.header a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.header h1{
+    flex-wrap: wrap;
+    font-weight: bolder;
+    font-size: 15px;
+}
+.body{
+    display: flex;
+    flex-direction: row;
+}
+.first-name,
+.last-name{
+    font-size: 50px;
+    font-weight: bold;
+}
+.last-name{
+    color: #008bf8;
+}
+.first-name{
+    color: white;
+}
+.last-name{
+    color: #2b2d42;
+}
+.address{
+    font-size: 20px;
+    color: rgb(176, 175, 175);
+}
+.email{
+    font-size: 20px;
+    color: rgb(176, 175, 175);
+}
+.body-1{
+    position: relative;
+    top: -2%;
+    margin-top: 10px;
+    margin-left: 20px;
+} 
+.education{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1px;
+} 
+.education h1{
+    font-size: 25px;
+    margin-left: 3px;
+    font-weight: bold;
+} 
+.my-data-uni p{
+    text-align: justify;   
+}
+.header h1{
+    display: none;
+}
+p{
+    padding: 20px;
+}
+.footer{
+    position: relative;
+    top: 80%;
+    margin-top: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 200px;
+    background-color: #008bf8;
+    box-sizing: border-box;
+}
+.copy{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.copy{
+    position: relative;
+    left: 35%;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.copy h4{
+    margin-top: 2px;
+}
+.ski{
+    font-size: 45px;
+}
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.skills h3{
+    font-size: 15px;
+}
+}
+
+@media(min-width:500px) and (max-width:1300px){
+    .Uni-1,
+    .uni-2{
+    color: #008bf8;
+}
+    body{
+        background-color: #2b2d42;
+        color: white;
+    }
+    .header{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    padding:10px;
+    background-color: #008bf8;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+}
+.whole{
+    display: flex;
+    flex-direction: column;
+}
+.my-data{
+    display: flex;
+    flex-wrap: wrap;
+}
+.my-data p{
+    font-size: 20px;
+    color: rgb(176, 175, 175);
+    text-align: justify;
+}
+.header a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.header h1{
+    flex-wrap: wrap;
+    font-weight: bolder;
+    font-size: 15px;
+}
+.body{
+    display: flex;
+    flex-direction: row;
+}
+.first-name,
+.last-name{
+    font-size: 50px;
+    font-weight: bold;
+}
+.last-name{
+    color: #008bf8;
+}
+.first-name{
+    color: white;
+}
+.last-name{
+    color: #2b2d42;
+}
+.address{
+    font-size: 20px;
+    color: rgb(176, 175, 175);
+}
+.email{
+    font-size: 20px;
+    color: rgb(176, 175, 175);
+}
+.body-1{
+    position: relative;
+    top: -2%;
+    margin-top: 10px;
+    margin-left: 20px;
+} 
+.education{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1px;
+} 
+.education h1{
+    font-size: 25px;
+    margin-left: 3px;
+    font-weight: bold;
+} 
+.my-data-uni p{
+    text-align: justify;   
+}
+.header h1{
+    display: none;
+}
+p{
+    padding: 20px;
+}
+.footer{
+    position: relative;
+    top: -50%;
+    margin-top: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 200px;
+    background-color: #008bf8;
+    box-sizing: border-box;
+}
+.copy{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.copy{
+    position: relative;
+    left: 35%;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.copy h4{
+    margin-top: 2px;
+}
+.ski{
+    font-size: 45px;
+}
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.skills h3{
+    font-size: 15px;
+}
+}
+    </style>
+</head>
+<body>
+    <div class="whole">
+        <img src="app.png" alt="" srcset="" width="50px" height="50px" class="Icon" onclick="Open()">
+     <div class="drop-down" id="drop">
+        <h2 onclick="Close()">&times;</h2>
+        <a href="#header">Home</a>
+        <a href="">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="">Interest</a>
+     </div><br>
+
+    <div class="body-0">
+
+        
+       <div class="header" id="header">
+             <h1>Muneeb Ali</h1><br>
+             <a href="#header">Home</a>
+             <a href="">Experience</a>
+             <a href="#education">Education</a>
+             <a href="#skills">Skills</a>
+             <a href="">Interest</a>
+       </div>
+
+            
+    </div>
+
+    <div class="body-1">
+
+
+       <div class="body">
+        <div class="first-name">
+        Muneeb
+       </div>
+
+       <div class="last-name">
+        Ali
+       </div>
+       </div>
+       <div class="info">
+        <div class="address">
+            Lahore,Pakistan
+           </div>
+    
+           <div class="email">
+            muneebali2209@gmail.com
+           </div>
+       </div>
+    
+       <div class="my-data">
+        <p>
+            I'm Muneeb Ali, a passionate and driven individual with a diverse range of interests and expertise. With a background in [Your Profession or Field], I've honed my skills in [Relevant Skills or Specializations], constantly seeking new challenges and opportunities for growth. Whether it's through [Key Activities or Projects], or engaging in [Hobbies or Personal Interests], I strive to bring creativity and dedication to everything I do. I'm always eager to connect with like-minded individuals and explore new avenues for collaboration and learning.  
+        </p>
+       </div>
+       <hr>
+       <h2 style="color: rgb(176, 175, 175);">My Social Media Accounts</h2>
+    <div class="social">
+        
+        <div class="ins">
+            <a href=""><img src="message-removebg-preview.png" alt="" srcset="" width="30px"></a>
+        </div>
+         <div class="link">
+            <a href=""><img src="instagram__1_-removebg-preview.png" alt="" srcset="" width="30px"></a>
+        </div>
+    </div>
+<hr>
+    <div class="education" id="education">
+        <h1 class="Uni-1">University</h1>
+        <h1>Of</h1>
+        <h1 class="uni-2">Central</h1>
+        <h1>Punjab</h1>
+    </div>
+    <div class="my-data-uni">
+        <p>
+            I have accumulated significant experience working at [Company Name], where I have been involved in [Key Responsibilities or Projects]. Over the years, I’ve successfully led initiatives such as [Specific Project or Task],resulting in [Quantifiable Achievement or Improvement]. My role has required me to collaborate closely with diverse teams, manage complex tasks, and innovate solutions that enhance [Aspect of Work]. Prior to this, at [Previous Company Name], I focused on [Key Responsibilities or Achievements], further developing my skills in [Relevant Skill or Area]. My career is marked by a commitment to excellence and a drive to continuously improve and adapt in a dynamic environment.
+
+        </p>
+    </div>
+    <hr>
+    <div class="skills" id="skills">
+    <hr>
+    <h1 class="ski">Skills</h1>
+    
+        <h3>&rarr; Full Stack Developer &larr;</h3>
+        <h3>&rarr; App Development &larr;</h3>
+    </div>
+</div>
+</div>
+<div class="footer">
+    <div class="copy">
+     <h3>&copy;Copyright 2024</h3>
+     <h4>All Right Reserved</h4>
+    </div>
+</div>
+<script src="Portfolio.js">
+    var menu=document.getElementById("drop");
+function Open(){
+    menu.style.display="block";
+}
+
+function Close(){
+    menu.style.display="none";
+}
+</script>
+</body>
+</html>
