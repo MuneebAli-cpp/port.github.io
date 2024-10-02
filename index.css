@@ -1,0 +1,449 @@
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 200px;
+    height: 100%;
+    padding:10px;
+    background-color: #008bf8;
+    box-sizing: border-box;
+    color: white;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.my-data{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.my-data p{
+    font-size: 20px;
+    color: rgb(176, 175, 175);
+    text-align: justify;
+}
+.header a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin-top: 20px;
+}
+.whole{
+    display: flex;
+    height: 1000px;
+}
+.body-0{
+    height: 100%;
+}
+.header h1{
+    font-weight: bolder;
+    margin-top: 30px;
+}
+.body{
+    display: flex;
+    flex-direction: row;
+}
+.body .last-name{
+    margin-left: 5px;
+}
+.first-name,
+.last-name{
+    font-size: 70px;
+    font-weight: bold;
+}
+.last-name{
+    color: #008bf8;
+}
+.address{
+    font-size: 20px;
+    color: rgb(176, 175, 175);
+}
+.email{
+    font-size: 20px;
+    color: rgb(176, 175, 175);
+}
+.body-1{
+    margin-left: 20px;
+}
+.ins,
+.link{
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    justify-items: center;
+    margin-left: 3px;
+    transition: 2s;
+    text-align: center;
+    border-radius: 15.5px;
+}
+.ins a{
+    transform: translate(-50%,-50%);
+}
+.link a{
+    transform: translate(-50%,-50%);
+}
+.ins:hover{
+   transform: scale(1.5);
+}
+.link:hover{
+    transform: scale(1.5);
+    
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    margin-left: 3px;
+}
+.education{
+    display: flex;
+    flex-wrap: wrap;
+}
+.education h1{
+    font-size: 70px;
+    margin-left: 15px;
+}
+.Uni-1,
+.uni-2{
+    color: #008bf8;
+}
+.my-data-uni p{
+    text-align: justify;
+    font-size: 20px;
+    color: rgb(176, 175, 175);
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 200px;
+    background-color: #2b2d42;
+    box-sizing: border-box;
+    margin-top: 80px;
+}
+.copy{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.copy{
+    position: relative;
+    left: 45%;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.copy h4{
+    margin-top: 2px;
+}
+.ski{
+    font-size: 70px;
+}
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.drop-down{
+    display: none;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #008bf8;
+    padding: 10px;
+}
+.Icon{
+    display: none;
+}
+@media (min-width:300px) and (max-width:450px){
+    .Uni-1,
+    .uni-2{
+    color: #008bf8;
+}
+    body{
+        background-color: #2b2d42;
+        color: white;
+    }
+    .Icon{
+        display: block;
+    }
+    .drop-down{
+        display: none;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: #008bf8;
+        padding: 10px;
+    }
+    #drop{
+        transition: 2s;
+    }
+    .drop-down a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    .header{
+    display: none;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    padding:10px;
+    background-color: #008bf8;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+}
+.whole{
+    display: flex;
+    flex-direction: column;
+}
+.my-data{
+    display: flex;
+    flex-wrap: wrap;
+}
+.my-data p{
+    font-size: 20px;
+    color: rgb(176, 175, 175);
+    text-align: justify;
+}
+.header a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.header h1{
+    flex-wrap: wrap;
+    font-weight: bolder;
+    font-size: 15px;
+}
+.body{
+    display: flex;
+    flex-direction: row;
+}
+.first-name,
+.last-name{
+    font-size: 50px;
+    font-weight: bold;
+}
+.last-name{
+    color: #008bf8;
+}
+.first-name{
+    color: white;
+}
+.last-name{
+    color: #2b2d42;
+}
+.address{
+    font-size: 20px;
+    color: rgb(176, 175, 175);
+}
+.email{
+    font-size: 20px;
+    color: rgb(176, 175, 175);
+}
+.body-1{
+    position: relative;
+    top: -2%;
+    margin-top: 10px;
+    margin-left: 20px;
+} 
+.education{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1px;
+} 
+.education h1{
+    font-size: 25px;
+    margin-left: 3px;
+    font-weight: bold;
+} 
+.my-data-uni p{
+    text-align: justify;   
+}
+.header h1{
+    display: none;
+}
+p{
+    padding: 20px;
+}
+.footer{
+    position: relative;
+    top: 80%;
+    margin-top: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 200px;
+    background-color: #008bf8;
+    box-sizing: border-box;
+}
+.copy{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.copy{
+    position: relative;
+    left: 35%;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.copy h4{
+    margin-top: 2px;
+}
+.ski{
+    font-size: 45px;
+}
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.skills h3{
+    font-size: 15px;
+}
+}
+
+@media(min-width:500px) and (max-width:1300px){
+    .Uni-1,
+    .uni-2{
+    color: #008bf8;
+}
+    body{
+        background-color: #2b2d42;
+        color: white;
+    }
+    .header{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    padding:10px;
+    background-color: #008bf8;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+}
+.whole{
+    display: flex;
+    flex-direction: column;
+}
+.my-data{
+    display: flex;
+    flex-wrap: wrap;
+}
+.my-data p{
+    font-size: 20px;
+    color: rgb(176, 175, 175);
+    text-align: justify;
+}
+.header a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.header h1{
+    flex-wrap: wrap;
+    font-weight: bolder;
+    font-size: 15px;
+}
+.body{
+    display: flex;
+    flex-direction: row;
+}
+.first-name,
+.last-name{
+    font-size: 50px;
+    font-weight: bold;
+}
+.last-name{
+    color: #008bf8;
+}
+.first-name{
+    color: white;
+}
+.last-name{
+    color: #2b2d42;
+}
+.address{
+    font-size: 20px;
+    color: rgb(176, 175, 175);
+}
+.email{
+    font-size: 20px;
+    color: rgb(176, 175, 175);
+}
+.body-1{
+    position: relative;
+    top: -2%;
+    margin-top: 10px;
+    margin-left: 20px;
+} 
+.education{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1px;
+} 
+.education h1{
+    font-size: 25px;
+    margin-left: 3px;
+    font-weight: bold;
+} 
+.my-data-uni p{
+    text-align: justify;   
+}
+.header h1{
+    display: none;
+}
+p{
+    padding: 20px;
+}
+.footer{
+    position: relative;
+    top: -50%;
+    margin-top: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 200px;
+    background-color: #008bf8;
+    box-sizing: border-box;
+}
+.copy{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.copy{
+    position: relative;
+    left: 35%;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.copy h4{
+    margin-top: 2px;
+}
+.ski{
+    font-size: 45px;
+}
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.skills h3{
+    font-size: 15px;
+}
+}
